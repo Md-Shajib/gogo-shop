@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function TopHeader() {
   return (
-    <header className="py-2 border-b border-gray-300 shadow-sm">
+    <header className="py-2 border-b border-gray-50/10 shadow bg-gray-50">
       <div className="container flex items-center justify-between">
         <p className="text-[13px]">
           Limited-Time Offers: Mid-Summer Season Sale Live Now -{" "}

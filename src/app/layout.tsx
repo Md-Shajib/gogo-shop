@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{backgroundColor: MyTheme.token?.colorBgBase}}>
         <ReduxProvider>
           <ConfigProvider theme={MyTheme}>
             <AntdRegistry>

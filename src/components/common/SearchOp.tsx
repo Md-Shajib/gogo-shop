@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export default function SearchOp() {
   return (
-    <div className="search w-[400px] bg-gray-100 rounded-md flex items-center shadow-sm px-2">
+    <div className="search w-[400px] bg-gray-200 rounded-md flex items-center shadow-sm px-2">
       <input
         type="text"
         placeholder="Search here..."
