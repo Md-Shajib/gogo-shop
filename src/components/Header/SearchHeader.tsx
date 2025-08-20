@@ -1,17 +1,17 @@
-import Link from "next/link";
-import Image from "next/image";
-import SearchOp from "../common/SearchOp";
+import { Avatar, Badge, Button, Tooltip } from "antd";
 import { ShoppingCart } from "lucide-react";
-import { Avatar, Badge, Button } from "antd";
+import Image from "next/image";
+import Link from "next/link";
+import SearchOption from "../common/SearchOp";
 
 export default function SearchHeader() {
   return (
-    <header className="my-3 w-full h-[90px]">
+    <header className="pt-1 pb-2 w-full  bg-gray-50">
       <div className="container flex items-center justify-between">
         <div className="logo">
           <Link href={"/"}>
             <Image
-              src="/images/logo.png"
+              src="/images/logo-02.png"
               alt="Logo"
               width={160}
               height={40}
@@ -20,7 +20,7 @@ export default function SearchHeader() {
           </Link>
         </div>
         <div>
-          <SearchOp />
+          <SearchOption />
         </div>
         <div className="flex items-center justify-end gap-5 ">
           <div className="flex items-center gap-3">
@@ -41,13 +41,15 @@ export default function SearchHeader() {
                 />
               </Badge>
             </div>
-            <div className="border-2 border-gray-300 rounded-full ml-2">
+            <Tooltip title="My Profile" color="red">
+              <div className="border-2 border-gray-300 rounded-full ml-2 hover:cursor-pointer">
               <Avatar
                 shape="circle"
                 size="large"
-                src="/images/user-avatar-01.png"
+                src="/images/user-avatar-02.png"
               />
             </div>
+            </Tooltip>
           </div>
         </div>
       </div>

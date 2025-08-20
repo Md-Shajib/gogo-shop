@@ -5,6 +5,7 @@ import { App, ConfigProvider } from "antd";
 import { MyTheme } from "./theme";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import SearchHeader from "@/components/Header/SearchHeader";
+import CategoryNav from "@/components/Header/CategoryNav";
 
 export default function RootLayout({
   children,
@@ -20,6 +21,7 @@ export default function RootLayout({
               <App>
                 <TopHeader />
                 <SearchHeader />
+                <CategoryNav />
                 {children}
               </App>
             </AntdRegistry>
