@@ -12,10 +12,13 @@ const countersSlice = createSlice({
     increment: (state, action) => {
       const idx = state.findIndex((c) => c.id === action.payload);
       if (idx !== -1) state[idx].value++;
+      return state
+
     },
     decrement: (state, action) => {
       const idx = state.findIndex((c) => c.id === action.payload);
       if (idx !== -1) state[idx].value--;
+      return state
     },
   },
 });

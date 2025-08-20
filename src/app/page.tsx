@@ -3,21 +3,18 @@
 import { Button } from "antd";
 import { increment, decrement } from "@/store/slices/counterSlice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { useSelector } from "react-redux";
+import Link from "next/link";
 
 export default function Home() {
-  const counters = useAppSelector((state) => state.counters);
+  const counters = useSelector((state:any) => state.counters);
   const dispatch = useAppDispatch();
 
   return (
     <div>
-      <h1>Main Page</h1>
-      {counters.map((c) => (
-        <div key={c.id}>
-          <p>Counter {c.id}: {c.value}</p>
-          <Button onClick={() => dispatch(increment(c.id))}>Increment</Button>
-          <Button onClick={() => dispatch(decrement(c.id))}>Decrement</Button>
-        </div>
-      ))}
+      <div className="container">
+        
+      </div>
     </div>
   );
 }
