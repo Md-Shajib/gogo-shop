@@ -12,8 +12,8 @@ export default function CategoryNav() {
   return (
     <nav className="bg-[#f9fafb] pb-2">
       <div className="container">
-        <div className="flex justify-between items-center gap-5">
-          <div>
+        <div className="flex justify-between items-center gap-5 w-full">
+          <div className="w-1/5">
             <Button
               onClick={toggleCategory}
               icon={<AlignLeft size={17} />}
@@ -31,7 +31,7 @@ export default function CategoryNav() {
             </Button>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 w-3/5 overflow-x-auto  scrollbar-hide">
             <Link href={"/"}>
               <Button type="link" className="!text-[15px] !font-semibold tracking-wide">
                 Smartwatches
@@ -74,9 +74,9 @@ export default function CategoryNav() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 justify-end w-1/5">
             <Rocket size={17} />
-            <span>Free International Delivery</span>
+            <span className="text-[16px]">Free International Delivery</span>
           </div>
         </div>
       </div>
