@@ -14,6 +14,10 @@ const data = {
   Input: {
     borderColor: "#ddddddff",
   },
+  Dropdown: {
+    hoverBG: "#ffc9cd",
+    activeBG: "#f62f3f",
+  }
 };
 
 export const MyTheme: ThemeConfig = {
@@ -26,6 +30,8 @@ export const MyTheme: ThemeConfig = {
     colorLink: data.linkPrimary,
     colorLinkHover: data.primaryHover,
     colorBgContainer: data.bgContainer,
+    controlItemBgHover: data.Dropdown.hoverBG,
+    controlItemBgActive: data.Dropdown.activeBG,
   },
 
   components: {
@@ -41,5 +47,14 @@ export const MyTheme: ThemeConfig = {
       borderRadius: 0,
       bodyPadding: 14,
     },
+    Menu: {
+      activeBarHeight: 3,
+      collapsedIconSize: 18,
+      dropdownWidth: 180,
+      horizontalLineHeight: 2.5,
+    },
+    Dropdown: {
+      paddingBlock: 5,
+    }
   },
 };
