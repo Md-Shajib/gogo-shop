@@ -19,7 +19,7 @@ export default function CategoryNav() {
     setCurrent(key);
   };
   return (
-    <nav className="bg-[#f9fafb] pb-2">
+    <nav className="bg-[#f9fafb] pb-2 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
       <div className="container">
         <div className="flex justify-between items-center w-full">
           <div className="w-1/5">

@@ -19,9 +19,6 @@ export default function RootLayout({
           <ConfigProvider theme={MyTheme}>
             <AntdRegistry>
               <App>
-                <TopHeader />
-                <SearchHeader />
-                <CategoryNav />
                 {children}
               </App>
             </AntdRegistry>

@@ -1,5 +1,7 @@
 "use client";
 
+import UserLayout from "./layout/UserLayout";
+
 // import { useAppDispatch } from "@/store/hooks";
 // import { useSelector } from "react-redux";
 
@@ -8,10 +10,8 @@ export default function Home() {
   // const dispatch = useAppDispatch();
 
   return (
-    <div>
-      <div className="container">
-        
-      </div>
-    </div>
+    <UserLayout>
+      <p>Home</p>
+    </UserLayout>
   );
 }
