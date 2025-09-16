@@ -8,8 +8,6 @@
   --foreground: #171717;
 }
 
-
-
 @theme {
   --primary: #ff5252;
   --secondary: #353535;
@@ -59,4 +57,8 @@ body {
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
+}
+
+.custom-swiper-pagination-carosol .swiper-pagination-bullet-active {
+  width: 30px !important;
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import Banner from "@/components/Banner";
 import UserLayout from "./layout/UserLayout";
 
 // import { useAppDispatch } from "@/store/hooks";
@@ -11,7 +12,7 @@ export default function Home() {
 
   return (
     <UserLayout>
-      <p>Home</p>
+      <Banner />
     </UserLayout>
   );
 }
